@@ -1,0 +1,78 @@
+@font-face {
+  font-family: Oswald;
+  src: url(../fonts/Oswald-Regular.ttf); }
+@font-face {
+  font-family: OswaldBold;
+  src: url(../fonts/Oswald-Bold.ttf); }
+@font-face {
+  font-family: OswaldLight;
+  src: url(../fonts/Oswald-Light.ttf); }
+@font-face {
+  font-family: OswaldExtraLight;
+  src: url(../fonts/Oswald-ExtraLight.ttf); }
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway-Regular.ttf); }
+@font-face {
+  font-family: RalewayBold;
+  src: url(../fonts/Raleway-Bold.ttf); }
+@font-face {
+  font-family: RalewayLight;
+  src: url(../fonts/Raleway-Light.ttf); }
+@font-face {
+  font-family: RalewayExtraLight;
+  src: url(../fonts/Raleway-ExtraLight.ttf); }
+header {
+  background: #333333; }
+  header .main-header__hover-background, header .main-header__logo-link:hover, header .main-header__menu .uk-navbar .uk-navbar-nav li:hover a {
+    background: rgba(255, 255, 255, 0.2) !important; }
+  header .main-header__flex-stretch, header .main-header__menu, header .main-header__menu .uk-navbar, header .main-header__menu .uk-navbar .uk-navbar-nav {
+    display: flex;
+    align-items: stretch; }
+  header .main-header__logo-link {
+    font-family: Oswald;
+    color: white;
+    display: inline-block;
+    padding: 15px 10px;
+    font-size: 2.5em;
+    line-height: 0.7;
+    transition: all 0.3s;
+    text-align: center; }
+    header .main-header__logo-link span {
+      font-size: 0.4em; }
+    header .main-header__logo-link:hover {
+      text-decoration: none !important; }
+  header .main-header__menu .uk-navbar {
+    width: 100%;
+    background: transparent; }
+    header .main-header__menu .uk-navbar .uk-navbar-nav {
+      width: 100%;
+      justify-content: space-around; }
+      header .main-header__menu .uk-navbar .uk-navbar-nav li:hover a {
+        cursor: pointer; }
+      header .main-header__menu .uk-navbar .uk-navbar-nav li a {
+        height: 100%;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: RalewayLight;
+        font-size: 1.3em; }
+  header .main-header__phone-email-link {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column; }
+    header .main-header__phone-email-link a {
+      display: block;
+      color: white;
+      font-family: Raleway;
+      font-size: 1.2em;
+      line-height: 1;
+      margin: 8px 0; }
+      header .main-header__phone-email-link a i {
+        margin-right: 10px; }
+
+/*# sourceMappingURL=app.css.map */

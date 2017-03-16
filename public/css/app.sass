@@ -1,0 +1,152 @@
+//  ПОДКЛЮЧЕНИЕ ШРИФТОВ
+//
+//  НАЧАЛО ПОДКЛЮЧЕНИЯ ШРИФТА ДЛЯ ЗАГОЛОВКОВ
+//
+
+@font-face
+  font-family: Oswald
+  src: url(../fonts/Oswald-Regular.ttf)
+
+@font-face
+  font-family: OswaldBold
+  src: url(../fonts/Oswald-Bold.ttf)
+
+@font-face
+  font-family: OswaldLight
+  src: url(../fonts/Oswald-Light.ttf)
+
+@font-face
+  font-family: OswaldExtraLight
+  src: url(../fonts/Oswald-ExtraLight.ttf)
+
+//
+//  КОНЕЦ ПОДКЛЮЧЕНИЯ ШРИФТА ДЛЯ ЗАГОЛОВКОВ
+//
+
+//
+//  НАЧАЛО ПОДКЛЮЧЕНИЯ ГЛАВНОГО ШРИФТА
+//
+
+@font-face
+  font-family: Raleway
+  src: url(../fonts/Raleway-Regular.ttf)
+
+@font-face
+  font-family: RalewayBold
+  src: url(../fonts/Raleway-Bold.ttf)
+
+@font-face
+  font-family: RalewayLight
+  src: url(../fonts/Raleway-Light.ttf)
+
+@font-face
+  font-family: RalewayExtraLight
+  src: url(../fonts/Raleway-ExtraLight.ttf)
+
+//
+//  КОНЕЦ ПОДКЛЮЧЕНИЯ ГЛАВНОГО ШРИФТА
+//
+
+//
+//  НАЧАЛО ГЛАВНОГО ШРИФТА
+//
+
+$mainFont: Raleway
+$mainFontBold: RalewayBold
+$mainFontLight: RalewayLight
+$mainFontExtraLight: RalewayExtraLight
+
+//
+//  КОНЕЦ ГЛАВНОГО ШРИФТА
+//
+
+//
+//  НАЧАЛО ВТОРОСТЕПЕННОГО ШРИФТА
+//
+
+$secondaryFont: Oswald
+$secondaryFontBold: OswaldBold
+$secondaryFontLight: OswaldLight
+$secondaryFontExtraLight: OswaldExtraLight
+
+//
+//  КОНЕЦ ВТОРОСТЕПЕННОГО ШРИФТА
+//
+
+$grayColor: #333333
+$whiteColor: white
+$blackColor: black
+$transparent: transparent
+
+header
+  background: $grayColor
+
+  .main-header__hover-background
+    background: rgba($whiteColor, .2) !important
+
+  .main-header__flex-stretch
+    display: flex
+    align-items: stretch
+
+  .main-header__logo-link
+    font-family: $secondaryFont
+    color: $whiteColor
+    display: inline-block
+    padding: 15px 10px
+    font-size: 2.5em
+    line-height: .7
+    transition: all .3s
+    text-align: center
+
+    span
+      font-size: 0.4em
+
+    &:hover
+      text-decoration: none !important
+      @extend .main-header__hover-background
+
+  .main-header__menu
+    @extend .main-header__flex-stretch
+
+    .uk-navbar
+      width: 100%
+      background: $transparent
+      @extend .main-header__flex-stretch
+
+      .uk-navbar-nav
+        width: 100%
+        @extend .main-header__flex-stretch
+        justify-content: space-around
+
+        li
+          &:hover
+            a
+              @extend .main-header__hover-background
+              cursor: pointer
+
+          a
+            height: 100%
+            transition: all .3s
+            display: flex
+            align-items: center
+            justify-content: center
+            color: $whiteColor
+            font-family: $mainFontLight
+            font-size: 1.3em
+
+  .main-header__phone-email-link
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: column
+    a
+      display: block
+      color: $whiteColor
+      font-family: $mainFont
+      font-size: 1.2em
+      line-height: 1
+      margin: 8px 0
+
+      i
+        margin-right: 10px
